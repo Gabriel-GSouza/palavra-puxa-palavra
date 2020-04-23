@@ -1,0 +1,197 @@
+main {
+  overflow-y: hidden;
+}
+
+footer {
+  color: white;
+}
+
+.lhbaixo {
+  line-height: 1.1;
+}
+
+.roxao {
+  background-color: #1E003C;
+  transition: 1s;
+}
+
+.titulo {
+  color: #E000FF;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+.tambi {
+  font-family: 'Baloo Thambi 2', cursive;
+}
+
+.branco {
+  background-color: white;
+}
+
+.roxao.branco {
+  color: #1E003C;
+}
+
+/* Geral */
+.telaPrincipal {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.conteudo {
+  width: calc(100% - 210px);
+  height: 100%;
+  color: white;
+}
+
+.menu-lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 210px;
+  z-index: 1000;
+}
+
+.menu-lateral>div {
+  text-align: center;
+  padding: 6px 20px;
+  border-radius: 210px;
+  background-color: #E000FF;
+  color: white;
+  margin: 5px 0px;
+  cursor: pointer;
+  box-shadow: 1.5px 1.5px black;
+  transition: 0.1s;
+  font-weight: bold;
+  font-family: 'Baloo Bhai 2', cursive;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu-lateral>div:hover {
+  box-shadow: 4px 4px black;
+}
+
+.fundoAmarelo {
+  background-color: #FCD117 !important;
+}
+
+#conceito>span:nth-of-type(2), #proximidade>span:nth-of-type(2), #contraste>span:nth-of-type(2),
+#experimentacao>span:nth-of-type(2), #inicio>span:nth-of-type(2) {
+  display: none;
+}
+
+iframe {
+  width: 560px;
+  height: 315px;
+}
+
+.caixaTextoAnimacao4 {
+  color: #1E003C;
+}
+
+@media (max-width:1200px) {
+  .caixaTexto {
+    min-width: 40%;
+  }
+}
+
+@media (max-width:992px) {
+  .menu-lateral {
+    width: 183px;
+  }
+
+  .menu-lateral>div {
+    padding: 6px 5px;
+    min-width: 180px;
+  }
+
+  .conteudo {
+    width: calc(100% - 183px);
+  }
+}
+
+@media (max-width:768px) {
+  .telaPrincipal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-lateral {
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 25px;
+    position: sticky;
+  }
+
+  iframe {
+    width: 90%;
+    height: 56.25vw;
+  }
+
+  .conteudo {
+    width: 100%
+  }
+
+  #conceito>span:nth-of-type(1), #proximidade>span:nth-of-type(1), #contraste>span:nth-of-type(1),
+  #experimentacao>span:nth-of-type(1), #inicio>span:nth-of-type(1) {
+    display: none;
+  }
+
+  #conceito>span:nth-of-type(2), #proximidade>span:nth-of-type(2), #contraste>span:nth-of-type(2),
+  #experimentacao>span:nth-of-type(2), #inicio>span:nth-of-type(2) {
+    display: block;
+  }
+
+  .menu-lateral>div {
+    padding: 6px 5px;
+    min-width: initial;
+  }
+}
+
+@media (max-width:576px) {}
+
+@media (max-width:420px) {}
+
+@media print {
+  @page {size: landscape}
+
+  .experimentacaoTexto {
+    width: 100%!important;
+    border: 1px solid #f5d316;
+  }
+
+  .experimentacaoPreenchimento{
+    width: 100%;
+  }
+
+
+  .experimentacaoTabela{
+  }
+
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: transparent;
+  }
+
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: transparent;
+  }
+
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: transparent;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: transparent;
+  }
+}

@@ -1,0 +1,151 @@
+.experimentacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-bottom: 70px;
+}
+
+.experimentacaoCaixaTexto {
+  width: 40%
+}
+
+.experimentacaoPreenchimento {
+  width: 56%
+}
+
+.experimentacaoTabela, .experimentacaoTexto, .experimentacaoBotoes {
+  background-color: white;
+}
+
+.experimentacaoTabela {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1E003C;
+  margin-bottom: 25px;
+}
+
+.experimentacaoTabela>div:nth-of-type(1) {
+  border-bottom: 2px solid #f9d317;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.experimentacaoTabela>div:nth-of-type(1)>p {
+  margin-bottom: 0px;
+  width: 10%;
+}
+
+.experimentacaoTabela>table {
+  width: 100%;
+}
+
+.experimentacaoTabela td {
+  border-right: 2px solid #f9d317;
+  border-bottom: 2px solid #f9d317;
+}
+
+.experimentacaoTabela tr>td:last-of-type {
+  border-right: 0px solid #f9d317;
+}
+
+.experimentacaoTabela th {
+  padding-left: 5px;
+}
+
+.experimentacaoTabela textarea, .experimentacaoTexto textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+  display: block;
+}
+
+.experimentacaoTexto {
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.experimentacaoTexto p {
+  color: #1E003C;
+  font-weight: bold;
+}
+
+.experimentacaoBotoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 0px;
+  background-color: #1e003c;
+}
+
+.experimentacaoBotoes>div {
+  padding: 15px 0px;
+  background-color: #e000ff;
+  border-radius: 15px;
+  color: white;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  line-height: 1.1;
+  min-height: 64px;
+  box-shadow: 1.5px 1.5px black;
+  cursor: pointer;
+}
+
+.experimentacaoBotoes>div:hover {
+  box-shadow: 4px 4px black;
+}
+
+.experimentacao>img {
+  bottom: -8%;
+  left: -2%;
+  width: 55vw;
+  position: absolute;
+}
+
+@media (max-width:1200px) {
+  .experimentacao>img {
+    bottom: -8%;
+    left: -2%;
+    width: 58vw;
+    position: absolute;
+  }
+}
+
+@media (max-width:992px) {
+  .experimentacao {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experimentacaoCaixaTexto {
+    width: 90%;
+  }
+
+  .experimentacaoPreenchimento {
+    width: 90%;
+  }
+  .experimentacao>img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .experimentacaoCaixaTexto {
+    width: 100%;
+  }
+
+  .experimentacaoPreenchimento {
+    width: 100%;
+  }
+}

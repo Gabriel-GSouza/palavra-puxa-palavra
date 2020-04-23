@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+
+  <meta name="description" property="og:description" content="">
+
+  <title>Univesp | Palavra Puxa Palavra</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon" />
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Animate CSS. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <link rel="stylesheet" href="https://apps.univesp.br/common/animate.css"> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.1.css">
+  <!-- <link rel="stylesheet" href="../common/rea-geral-2.1.css">   -->
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/inicio.css">
+  <link rel="stylesheet" href="stylesheets/conceito.css">
+  <link rel="stylesheet" href="stylesheets/proximidade.css">
+  <link rel="stylesheet" href="stylesheets/contraste.css">
+  <link rel="stylesheet" href="stylesheets/experimentacao.css">
+
+</head>
+
+<body class="d-flex flex-column roxao">
+
+  <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
+  <!-- <div class="esconder-tela-pequena"> -->
+
+  <!-- Menu -->
+  <!--///////////////////////////////////////////////////////////////
+  Classe para nav
+  - padrão => header estático
+  - class="header-dinamico" => header possui posição fixa e é mostrado apenas quando a página está no topo (necessário ajustar padding ou margin superior e inferior do main).
+  //////////////////////////////////////////////////////////////////-->
+  <!-- <nav class="header-dinamico"> -->
+  <nav>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/colorida-positiva.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <!-- Compartilhamento -->
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown d-print-none">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+
+    <div class="container telaPrincipal">
+      <div class="menu-lateral d-print-none">
+        <div class='fundoAmarelo' id='inicio'><span><span><img src="assets/menu/menu-branco-inicio.png" alt=""></span> INÍCIO</span><span><img src="assets/menu/menu-branco-inicio.png" alt=""></span></div>
+        <div id='conceito'><span><span><img src="assets/menu/menu-branco-conceitos.png" alt=""></span> CONCEITO</span><span><img src="assets/menu/menu-branco-conceitos.png" alt=""></span></div>
+        <div id='proximidade'><span><span><img src="assets/menu/menu-branco-proximidade.png" alt=""></span> PROXIMIDADE</span><span><img src="assets/menu/menu-branco-proximidade.png" alt=""></span></div>
+        <div id='contraste'><span><span><img src="assets/menu/menu-branco-contraste.png" alt=""></span> CONTRASTE</span><span><img src="assets/menu/menu-branco-contraste.png" alt=""></span></div>
+        <div id='experimentacao'><span><span><img src="assets/menu/menu-branco-experimentacao.png" alt=""></span> EXPERIMENTAÇÃO</span><span><img src="assets/menu/menu-branco-experimentacao.png" alt=""></span></div>
+      </div>
+
+      <div class="conteudo inicio d-print-none">
+        <p class='tituloEspecial'><span>palavra</span><span>-puxa-</span><span>palavra</span></p>
+        <div id='animacao1' class="animacao1 roxao">
+          <p>No papel ou na tela de algum dispositivo eletrônico, o vazio da página dá medo. Como começar a escrever aquilo que temos vontade de compartilhar com alguém? Existem muitas maneiras. Neste recurso, você vai ter a oportunidade de aprender
+            e experimentar uma dessas técnicas, que tem o sugestivo nome de palavra-puxa-palavra.</p>
+        </div>
+        <div class='caixaDoVideo'>
+          <p>Quer saber como fazer uma palavra puxar outra palavra?</p>
+          <iframe src="https://www.youtube.com/embed/M4V3VgzBOiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="conteudo conceito d-print-none" style="display:none">
+        <div class = 'caixita'>
+          <div class="caixaTexto">
+            <p class='titulo'>Conceitos</p>
+            <p>Mapa Mental</p>
+            <p class='lhbaixo'>Grande ou pequeno, em prosa ou verso, um texto é um tecido composto por palavras; é também um caminho que liga palavras, conceitos, ideias. Por isso, é muito útil iniciar traçando um mapa mental do que se quer dizer. E,
+              qualquer que seja
+              o tipo, um mapa não precisa ser muito detalhado; basta indicar o <strong>ponto de partida</strong> e de <strong>chegada</strong> e, entre os dois, os <strong>pontos de referência</strong>.</p>
+          </div>
+          <div class="orientacoes">
+            <img class = "d-print-none" src="assets/conceitos/orientacoes.png" alt="">
+            <p>Explore o mapa!</p>
+            <p class='lhbaixo'>Neste mapa, você pode simular diferentes rotas e, tal como em um mapa mental, há o "ponto de partida", o "ponto de chegada" e os "pontos de referência" entre eles. A partir do seu "ponto de partida" selecione um
+              primeiro "ponto de referência" clicando em um dos círculos em cinza. Siga construindo sua própria rota escolhendo outros "pontos de referência" até o "ponto de chegada".</p>
+          </div>
+        </div>
+
+        <div class="mapaAnimado">
+          <div style="position:relative; transform: rotate(-5deg);">
+            <img id='fundo' src="assets/conceitos/mapa-animado-3.png" alt="">
+            <img src="assets/conceitos/elastico-amarelo-01.png" id="elastico-amarelo-01" class='elastico'>
+            <img src="assets/conceitos/elastico-amarelo-02.png" id="elastico-amarelo-02" class='elastico'>
+            <img src="assets/conceitos/elastico-amarelo-03.png" id="elastico-amarelo-03" class='elastico'>
+            <img src="assets/conceitos/elastico-amarelo-04.png" id="elastico-amarelo-04" class='elastico'>
+            <img src="assets/conceitos/elastico-amarelo-05.png" id="elastico-amarelo-05" class='elastico'>
+            <img src="assets/conceitos/elastico-roxo-01.png" id="elastico-roxo-01" alt="" class='elastico'>
+            <img src="assets/conceitos/elastico-roxo-02.png" id="elastico-roxo-02" alt="" class='elastico'>
+            <img src="assets/conceitos/elastico-roxo-03.png" id="elastico-roxo-03" alt="" class='elastico'>
+            <img src="assets/conceitos/elastico-roxo-04.png" id="elastico-roxo-04" alt="" class='elastico'>
+            <img src="assets/conceitos/elastico-roxo-05.png" id="elastico-roxo-05" alt="" class='elastico'>
+            <div class="partida">Ponto de partida</div>
+            <div class="chegada">Ponto de chegada</div>
+            <div class='tracejado' id="tracejado1"></div>
+            <div class='tracejado' id="tracejado2"></div>
+            <div class="bolinha" id="bolinha1" class='inicioFim'></div>
+            <div class="bolinha" id="bolinha2"></div>
+            <div class="bolinha" id="bolinha3"></div>
+            <div class="bolinha" id="bolinha4"></div>
+            <div class="bolinha" id="bolinha5"></div>
+            <div class="bolinha" id="bolinha6"></div>
+            <div class="bolinha" id="bolinha7" class='inicioFim'></div>
+            <div class="bolinha" id="bolinha8"></div>
+            <div class="bolinha" id="bolinha9"></div>
+            <button type="button"id = "restart">Teste outra rota</button>
+          </div>
+        </div>
+
+
+        <div id="textoMaoPai">
+          <p style="color: #E000FF; font-weight: bold; font-size: 2.0rem; margin-bottom: 60px;">A técnica</p>
+          <div class="textoMao">
+            <img src="assets/conceitos/mao-corda.png" alt="">
+            <div>
+              <p class='lhbaixo'>A técnica palavra-puxa-palavra consiste em criar um mapa mental baseado em uma associação de ideias do tipo:</p>
+              <p class='lhbaixo' style='margin-bottom:0px;'><b>“quando penso em _____,</b></p>
+              <p class='lhbaixo'><b>eu lembro de _____”</b></p>
+              <p class='lhbaixo' style='margin-bottom:0px;'>ou, então, do tipo:</p>
+              <p class='lhbaixo' style='margin-bottom:0px;'><b>“para explicar _____,</b></p>
+              <p class='lhbaixo' style='margin-bottom:0px;'><b>eu preciso falar de _____”</b></p>
+            </div>
+            <div>
+              <p class='lhbaixo'>Pense em um tema sobre o qual você gostaria de escrever. Que palavras vêm à sua mente quando pensa em seu ponto de partida ou de chegada? Faça uma lista dessas palavras</p>
+            </div>
+            <div>
+              <p class='lhbaixo'>Pegue agora cada uma dessas palavras da lista. O que você lembra quando pensa nelas? O que elas lhe sugerem? Faça uma nova lista com as novas palavras. O que você está fazendo é derivar uma palavra de outra, uma ideia
+                de outra. E você pode derivar uma outra vez, e mais outra</p>
+            </div>
+            <div>
+              <p class='lhbaixo'>Pegue essa lista de palavras e suas derivações, organize-as e escreva seu texto. Mas lembre-se de algo muito importante: para quem você está escrevendo? Onde esse texto vai estar?</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="conteudo proximidade d-print-none" style="display:none">
+        <div class="caixaTextoAnimacao3">
+          <div>
+            <p class='titulo'>Proximidade</p>
+            <p class='tambi'>A teoria da Gestalt, a respeito da forma como as pessoas percebem o que está ao redor, ensina que reunir elementos com características semelhantes é uma maneira segura de produzir uma peça de comunicação. Nosso primeiro
+              exemplo com
+              esta técnica vai derivar palavras a partir de suas semelhanças ou proximidade.</p>
+          </div>
+          <div id="animacao3"></div>
+        </div>
+        <div class="proximidadeTabela">
+          <p>Ponto de partida: </p>
+          <p>“A internet e as tecnologias de comunicação”</p>
+          <div id="tabelaProximidade" class='tambi'>
+            <table>
+              <tr>
+                <th>PALAVRA</th>
+                <th>1ª DERIVAÇÃO</th>
+                <th>2ª DERIVAÇÃO</th>
+              </tr>
+              <tr>
+                <td>Internet</td>
+                <td>Navegação, navegar</td>
+                <td>Embarcação, navio, jangada, canoa</td>
+              </tr>
+              <tr>
+                <td>Internet</td>
+                <td>Web site</td>
+                <td>Home page</td>
+              </tr>
+              <tr>
+                <td>Tecnologia</td>
+                <td>Computador</td>
+                <td>Gigabytes</td>
+              </tr>
+              <tr>
+                <td>Tecnologia</td>
+                <td>Programas, softwares</td>
+                <td>Vírus, hacker</td>
+              </tr>
+              <tr>
+                <td>Tecnologia</td>
+                <td>Streaming</td>
+                <td>Netflix, Spotify</td>
+              </tr>
+              <tr>
+                <td>Comunicação</td>
+                <td>E-mail</td>
+                <td>Spam</td>
+              </tr>
+              <tr>
+                <td>Comunicação</td>
+                <td>Telefone</td>
+                <td>Celular</td>
+              </tr>
+              <tr>
+                <td>Comunicação</td>
+                <td>Conexão, conectar</td>
+                <td>Connecticut</td>
+              </tr>
+            </table>
+            <img src="assets/proximidade/tabelaProximidade.png" alt="">
+          </div>
+        </div>
+        <div class="proximidadeResultado1">
+          <div class="texto">
+            <p>RESULTADO 1:</p>
+            <p class='tambi'>“Em dezembro de 1996, o artista e compositor Gilberto Gil fez o lançamento, ao vivo e em tempo real, da canção Pela internet. É a primeira gravação divulgada por streaming no Brasil e o lançamento se deu nas comemorações
+              dos 80 anos da primeira gravação de um samba: Pelo telefone. Essas duas canções tratam das mudanças provocadas na sociedade com a chegada de novas tecnologias de comunicação: o telefone, no início do século 20, e o celular e a internet
+              no final do mesmo século. Gil mantém um site na web em que os visitantes podem navegar pelas letras de suas canções, ouvir as gravações e acompanhar a agenda do músico, entre outras coisas.” </p>
+          </div>
+          <div>
+            <iframe src="https://www.youtube.com/embed/Egh9r2AjTBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="proximidadeResultado2">
+          <div class='tambi'>
+            <p>RESULTADO 2</p>
+            <p><b>PELA INTERNET</b></p>
+            <p>(Gilberto Gil / Quanta / 1997)</p>
+            <p>Criar meu web site<br>Fazer minha home page<br>Com quantos gigabytes<br>Se faz uma jangada<br>Um barco que veleje</p>
+            <p>Que veleje nesse infomar<br>Que aproveite a vazante da infomaré<br>Que leve um oriki<br>do meu velho orixá<br>Ao porto de um disquete<br>de um micro em Taipé<br>Um barco que veleje nesse infomar<br>Que aproveite a vazante da
+              infomaré<br>Que leve meu e-mail até Calcutá<br>Depois de um hot-link</p>
+          </div>
+          <div class='tambi'>
+            <p>Num site de Helsinque para abastecer</p>
+            <p>Eu quero entrar na rede<br>Promover um debate<br>Juntar via Internet<br>Um grupo de tietes de Connecticut</p>
+            <p>De Connecticut acessar<br>O chefe da Macmilícia de Milão<br>Um hacker mafioso acaba de soltar<br>Um vírus pra atacar<br>programas no Japão<br>Eu quero entrar na rede pra contactar<br>Os lares do Nepal, os bares do Gabão<br>Que o chefe
+              da polícia carioca<br>avisa pelo celular<br>Que lá na praça Onze<br>tem um videopôquer para se jogar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="conteudo contraste d-print-none" style="display:none">
+        <div class="caixaTextoAnimacao4">
+          <div>
+            <p class='titulo'>Contraste</p>
+            <p class='tambi'>Embora seja seguro trabalhar com o que é semelhante ou próximo, a mesma teoria da Gestalt ensina que provocar contraste, trabalhar a partir de coisas opostas, é uma ótima maneira de provocar o interesse do outro.</p>
+            <p class='tambi'>Nosso segundo exemplo com a técnica do palavra-puxa-palavra vai criar derivações a partir da <b>oposição entre as palavras</b>.</p>
+          </div>
+          <div id="animacao4"></div>
+        </div>
+        <div class="contrasteTabela" style="color:#1E003C">
+          <p>Ponto de partida: </p>
+          <p>“A internet e as tecnologias de comunicação”</p>
+          <div id="tabelaContraste" class='tambi'>
+            <img src="assets/contraste/tabelaContraste.png" alt="">
+            <table>
+              <tr>
+                <th>PALAVRA</th>
+                <th>1ª DERIVAÇÃO</th>
+                <th>2ª DERIVAÇÃO</th>
+              </tr>
+              <tr>
+                <td>Falar</td>
+                <td>Calar</td>
+                <td>Som</td>
+              </tr>
+              <tr>
+                <td>Som</td>
+                <td>Silêncio</td>
+                <td>Ruído</td>
+              </tr>
+              <tr>
+                <td>Sim</td>
+                <td>Não</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Yin-Yang</td>
+                <td>Maniqueísmo</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Luz</td>
+                <td>Escuridão</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Dia</td>
+                <td>Noite</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Complemento</td>
+                <td>Oposição</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Dúvida</td>
+                <td>Certeza</td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="contrasteResultado1">
+          <div class="texto">
+            <p>RESULTADO 1:</p>
+            <p class='tambi'>“O pensamento ocidental, desde Parmênides, passando por Aristóteles e Descartes, busca a clareza e a objetividade. Uma forma extrema desse pensamento é a teoria <b style="font-style:italic">maniqueísta</b>: tem o Bem e
+              tem o Mal, o certo e o errado, mocinho e bandido, uma <b style="font-style:italic">certeza</b> que não deixa margem para a <b style="font-style:italic">dúvida</b>. Já a concepção oriental do Yin-Yang entende que, mais do que <b
+                style="font-style:italic">oposição</b>, as realidades diferentes se <b style="font-style:italic">complementam:</b> quando termina a <b style="font-style:italic">noite</b> e inicia o <b style="font-style:italic">dia</b>? <b
+                style="font-style:italic">Som</b> e <b style="font-style:italic">silêncio</b> são, igualmente, base para a existência de uma música. E, se por um lado, o som tem a capacidade de comunicar, um tipo de som específico – o <b
+                style="font-style:italic">ruído</b> – faz exatamente o contrário: atrapalha a comunicação. Da minha parte, minha grande certeza é que tem certas coisas que eu não sei dizer.”</p>
+          </div>
+          <div>
+            <iframe src="https://www.youtube.com/embed/_OGwRJviTPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="contrasteResultado2">
+          <div class='tambi'>
+            <p>RESULTADO 2</p>
+            <p><b>CERTAS COISAS</b></p>
+            <p>(Lulu Santos / Tudo Azul / 1984)</p>
+            <p>Não existiria som<br>se não houvesse o silêncio.<br>Não haveria luz<br>se não fosse a escuridão.<br>A vida é mesmo assim:<br>dia e noite, não e sim...</p>
+            <p>Cada voz que canta o amor não diz<br>tudo que quer dizer.<br>Tudo o que cala, fala<br>mais alto ao coração.<br>Silenciosamente, eu te falo<br>com paixão...</p>
+          </div>
+          <div class='tambi'>
+            <p>Eu te amo calado,<br>como quem ouve uma sinfonia<br>de silêncios e de luz.<br>Nós somos medo e desejo,<br>somos feitos de silêncio e sons.<br>Tem certas coisas<br>que eu não sei dizer...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="conteudo experimentacao" style="display:none">
+        <img class = "d-print-none" src="assets/experimentacao/elasticos.png" alt="">
+        <div class="experimentacaoCaixaTexto d-print-none">
+          <p class='titulo'>Experimentação</p>
+          <p class='tambi lhbaixo'>Faça aqui o exercício. Escolha um tema. Lembre-se que você deve dispor de informações sobre o assunto, que via de regra chegam a você por leituras. A partir desse tema, derive palavras (por semelhança ou oposição).
+            Depois, organize essas palavras e escreva seu texto</p>
+          <p class='tambi lhbaixo'><b>As competências em escrita melhoram consideravelmente com a prática. Quanto mais você praticar, maior facilidade vai ter para escrever.</b></p>
+        </div>
+
+        <div class="experimentacaoPreenchimento">
+          <div class="experimentacaoTabela">
+            <div>
+              <p class='tambi'>TEMA</p>
+              <textarea id="tabelaTema" rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea>
+            </div>
+            <table class='tambi'>
+              <tr>
+                <th>PALAVRA</th>
+                <th>1ª DERIVAÇÃO</th>
+                <th>2ª DERIVAÇÃO</th>
+              </tr>
+              <tr>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+                <td><textarea rows="1" cols="80" maxlength="25" placeholder="Escreva aqui"></textarea></td>
+              </tr>
+            </table>
+          </div>
+          <div class="experimentacaoTexto tambi">
+            <p>MEU TEXTO</p>
+            <textarea name="name" rows="3" cols="15" placeholder="Escreva aqui"></textarea>
+          </div>
+          <div class="experimentacaoBotoes tambi d-print-none">
+            <div id='imprimirFicha'>IMPRIMIR FICHA PREENCHIDA</div>
+            <div id='limparFicha'>LIMPAR FICHA</div>
+            <div id='salvarFicha'>SALVAR FICHA EDITÁVEL</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <!--//////////////////////////////////////////////////////
+  Classes prontas p/ footer (podem ser combinadas):
+  padrão => texto e contornos em cinza
+  class = "black" => texto e contornos em preto
+  class = "negativo" => texto e contornos em branco, sobre fundo escuro
+  class = "transparente" => fundo transparente (necessário ajustar cor dos ícones de compartilhamento nos círculos, para bater com a cor de fundo)
+  /////////////////////////////////////////////////////////-->
+  <!-- <footer class="black"> -->
+  <!-- <footer class="negativo"> -->
+  <!-- <footer class="transparente"> -->
+  <!-- <footer class="transparente black"> -->
+  <!-- <footer class="transparente negativo"> -->
+  <footer class='roxao d-print-none'>
+    <div class="container d-flex justify-content-between">
+
+      <div class="cred-rea">
+        <!-- Comente em caso de adaptação do REA -->
+        <div>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
+        <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
+        <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i class="fab fa-github"></i></a></div>
+        <div>Compartilhe: <div class="sharing"></div>
+        </div>
+
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <!-- FORMULÁRIOS DE AVALIAÇÃO -->
+      <div class="aval-rea d-flex">
+        <!-- AVALIAR RECURSO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfkKAgZxI9UITajEY06yblE_Y9IfHIz9hM3NXevjb3LyTOBHw/viewform?usp=pp_url&entry.542052009=Palavra+puxa+palavra" target="_blank">Avaliar este recurso</a>
+        <!-- REPORTAR ERRO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSeszRfSMVLcT2au5BzzKLEFMS0fsGnf7h8jUem9sqUvVkMoUQ/viewform?usp=pp_url&entry.1523910789=Palavra+puxa+palavra" target="_blank">Reportar erro</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- Fim da div .esconder-tela-pequena
+  Utilizar essa div caso o REA não se adapte a todos os formatos de tela -->
+  <!-- </div> -->
+
+  <!-- //////////////////////////////////////////////////////////
+  AVISO =+960px
+  Utilizar caso o REA possua limitações quanto aos tamanhos de tela
+  Caso contrário, deletar
+  ///////////////////////////////////////////////////////////////-->
+  <!-- <div class= "container d-lg-none text-center">
+    <div class="container">
+      <a href="https://univesp.br/" target="_blank">
+        <img src="https://apps.univesp.br/common/logo-univesp-positivo.svg" alt="Logo da Univesp" height="47px" width="135px" class='img-responsive center-block' style="margin-top:4rem">
+      </a>
+    </div>
+    <img src='https://apps.univesp.br/common/aviso-tela.gif' alt="Computador Animado" height="117px" width="160px" class='img-responsive center-block' style="margin-top:3rem">
+    <div style="margin-top:.5rem">
+      <p>
+        <font style=font-family:"Barlow" color="#3b78d1" 'text-center' size="10rem"><b>OPS!</b></font>
+      </p>
+      <p>
+        <font style=font-family:"Verdana" "text-center" size="3rem">Visualize este recurso em um computador, em janela com largura mínima de 992px.</font>
+      </p>
+    </div>
+  </div> -->
+
+  <!-- CRÉDITOS -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Desenvolvimento Econômico</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+
+          <h6>Equipe</h6>
+          <p><span class="funcao">Docente responsável</span>Vanessa Martins do Monte</p>
+          <p><span class="funcao">Coordenação</span>Édison Trombeta</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Alfredo S. V. Coelho</p>
+          <p><span class="funcao">Layout e Ilustração</span>Henrique Inhauser Caldas</p>
+          <p><span class="funcao">Edição de vídeo e animações</span>Celso Lourenço</p>
+          <p><span class="funcao">Programação</span>Alberto Ortiz</p>
+          <p><span class="funcao">Revisão</span>July Santos</p>
+
+        </div>
+        <div class="modal-footer">
+          <p>Abril/2020</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    var share = $(".sharing");
+    var page_title = $(document).attr('title');
+    var page_url = window.location.href;
+    share.jsSocials({
+      shares: [{
+          share: "facebook",
+          logo: "fab fa-facebook-f",
+        },
+        {
+          share: "twitter",
+          logo: "fab fa-twitter",
+        },
+        {
+          share: "whatsapp",
+          logo: "fab fa-whatsapp",
+        },
+      ],
+      url: page_url,
+      text: 'Confira o REA ' + page_title + '.',
+      showLabel: false,
+      showCount: false,
+      shareIn: "popup",
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
+  <script type="text/javascript" src="javascripts/events.js"></script>
+  <script type="text/javascript" src="javascripts/conceito.js"></script>
+
+  <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>

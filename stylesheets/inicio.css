@@ -1,0 +1,110 @@
+.inicio {
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloEspecial {
+  text-align: center;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 0px;
+}
+
+.tituloEspecial>span:nth-of-type(1) {
+  color: #FCD117;
+}
+
+.tituloEspecial>span:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.tituloEspecial>span:nth-of-type(3) {
+  color: #E000FF;
+}
+
+.caixaDoVideo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.caixaDoVideo>p {
+  margin-bottom: 25px;
+  color: #E000FF;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+.animacao1 {
+  position: relative;
+  width: 930px;
+  height: 418.5px;
+}
+
+.animacao1>p {
+  position: absolute;
+  margin-bottom: 0px !important;
+  color: white;
+  width: 45.66%;
+  height: 38.79%;
+  top: 44%;
+  left: 29%;
+  font-size: 1rem;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+@media (max-width:1200px) {
+  .animacao1 {
+    width: 750px;
+    height: 337.5px;
+  }
+
+  .animacao1>p{
+    top: 35%;
+  }
+}
+
+@media (max-width:992px) {
+  .animacao1 {
+    width: 510px;
+    height: 229.5px;
+  }
+
+  .animacao1>p {
+    top: 34%;
+    left: 28%;
+    font-size: 0.7rem;
+  }
+
+  .tituloEspecial {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width:768px) {
+  .animacao1>p {
+    top: 34%;
+    left: 28%;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width:576px) {
+  .animacao1 {
+    width: 100%;
+    height: 45vw;
+  }
+
+  .animacao1>p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width:420px) {
+  .animacao1>p {
+    font-size: 0.45rem;
+  }
+}

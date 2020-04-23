@@ -1,0 +1,229 @@
+#tabelaProximidade{
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#tabelaProximidade > img{
+  position: absolute;
+  top:-14%;
+  left: -10%;
+}
+
+.proximidadeTabela {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.proximidadeTabela table tr {
+  border-bottom: solid 1px #fcd117;
+}
+
+.proximidadeTabela table tr:nth-of-type(1) {
+  border-bottom: solid 0px #fcd117;
+}
+
+.proximidadeTabela table tr:last-of-type {
+  border-bottom: solid 0px #fcd117;
+}
+
+.proximidadeTabela>p:nth-of-type(1) {
+  margin-bottom: 0px;
+}
+
+.proximidadeTabela>p:nth-of-type(2) {
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.proximidadeTabela table td {
+  min-width: 245px;
+}
+
+.proximidadeTabela table td:nth-of-type(1) {
+  min-width: 140px;
+}
+
+.proximidadeTabela table td {
+  padding: 1px 5px;
+  border-right: 1px solid #fcd117;
+}
+
+.proximidadeTabela table th {
+  color: #e000ff;
+  padding: 1px 5px;
+}
+
+.proximidadeTabela table tr td:last-of-type, .proximidadeTabela table tr th:last-of-type {
+  border-right: 0px solid #fcd117;
+}
+
+.proximidadeTabela table tr:last-of-type {
+  padding: 10px 5px;
+}
+
+.proximidadeResultado1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.proximidadeResultado1>div:nth-of-type(1) {
+  width: 46%;
+  line-height: 1.2;
+}
+
+.proximidadeResultado1>div:nth-of-type(1)>p:nth-of-type(1) {
+  margin-bottom: 0px;
+  color: #E000FF;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+.proximidadeResultado1>div:nth-of-type(2) {
+  width: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proximidadeResultado1>div:nth-of-type(2) iframe {
+  width: 100%;
+}
+
+.proximidadeResultado2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.proximidadeResultado2>div:nth-of-type(1) {
+  width: 48%;
+  line-height: 1.1;
+}
+
+.proximidadeResultado2>div:nth-of-type(1)>p:nth-of-type(1) {
+  color: #E000FF;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+.proximidadeResultado2>div:nth-of-type(1)>p:nth-of-type(2) {
+  margin-bottom: 0px;
+}
+
+.proximidadeResultado2>div:nth-of-type(1) {
+  width: 46%;
+  line-height: 1.1;
+}
+
+.proximidadeResultado2>div:nth-of-type(2) {
+  width: 46%;
+  line-height: 1.1;
+}
+
+.caixaTextoAnimacao3, .caixaTextoAnimacao4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.caixaTextoAnimacao3>div:nth-of-type(1), .caixaTextoAnimacao4>div:nth-of-type(1) {
+  width: 40%;
+  margin-left: 15px;
+  line-height: 1.1;
+}
+
+.caixaTextoAnimacao3>div:nth-of-type(2), .caixaTextoAnimacao4>div:nth-of-type(2) {
+  width: 65%;
+  position: absolute;
+  left: 43%;
+}
+
+@media (max-width:1200px) {
+  .caixaTextoAnimacao3>div:nth-of-type(2), .caixaTextoAnimacao4>div:nth-of-type(2) {
+    width: 60%;
+  }
+}
+
+@media (max-width:992px) {
+  .proximidadeResultado1, .proximidadeResultado2 {
+    flex-direction: column;
+  }
+
+  .proximidadeResultado1>div:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .proximidadeResultado1>div:nth-of-type(2), .proximidadeResultado2>div:nth-of-type(2) {
+    width: 100%;
+  }
+
+  .proximidadeResultado2>div:nth-of-type(1) {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .proximidadeTabela table td:nth-of-type(1) {
+    min-width: 120px;
+  }
+
+  .proximidadeTabela table td:nth-of-type(2) {
+    min-width: 162px;
+  }
+
+  #tabelaProximidade>img {
+    width: 117%;
+    height: 125%;
+  }
+
+  .caixaTextoAnimacao3, .caixaTextoAnimacao4 {
+    flex-direction: column;
+    position: inherit;
+  }
+
+  .caixaTextoAnimacao3>div:nth-of-type(1) {
+    width: 90%;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .caixaTextoAnimacao3>div:nth-of-type(2) {
+    position: inherit;
+    width: 90%;
+  }
+}
+
+@media (max-width:768px) {
+  .caixaTextoAnimacao3>div:nth-of-type(1) {
+    width: 100%;
+  }
+
+  .caixaTextoAnimacao3>div:nth-of-type(2) {
+    width: 100%;
+  }
+}
+
+@media (max-width:576px) {
+  #tabelaProximidade {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  #tabelaProximidade>img{
+    display: none;
+  }
+
+  #tabelaTema{
+    margin-left: 10px;
+  }
+}
